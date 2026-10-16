@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LSTS Portal Dark Mode Pro",
+  "version": "2.0.1",
+  "description": "True native dark mode for LSTS Student Portal & Portal 2 with zero mascot ghosting.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://portal.lsts.edu.vn/*",
+        "*://portal2.lsts.edu.vn/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

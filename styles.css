@@ -1,0 +1,138 @@
+:root {
+  --lsts-bg-main: #0b0f19;
+  --lsts-bg-nav: rgba(15, 23, 42, 0.9);
+  --lsts-bg-hero: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+  --lsts-bg-card: #151d2e;
+  --lsts-bg-card-hover: #1e293b;
+  --lsts-border: #26334d;
+  --lsts-border-hover: #3b82f6;
+  --lsts-text-primary: #f8fafc;
+  --lsts-text-secondary: #94a3b8;
+}
+
+/* 1. Force Base Dark Background on HTML, Body, and React Root Wrappers */
+html.lsts-dark-enabled,
+html.lsts-dark-enabled body {
+  background-color: var(--lsts-bg-main) !important;
+  background-image: radial-gradient(
+    circle at 85% 15%,
+    rgba(30, 58, 138, 0.2) 0%,
+    rgba(11, 15, 25, 0) 60%
+  ) !important;
+  color: var(--lsts-text-primary) !important;
+}
+
+html.lsts-dark-enabled #root,
+html.lsts-dark-enabled #app,
+html.lsts-dark-enabled #__next,
+html.lsts-dark-enabled main,
+html.lsts-dark-enabled [data-lsts-role="page-bg"] {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* 2. Direct Tailwind Light Class Overrides (Instant Fallback) */
+html.lsts-dark-enabled [class*="min-h-screen"] {
+  background-color: var(--lsts-bg-main) !important;
+  background-image: none !important;
+}
+
+/* 3. Top Navigation Bar ("Khu vực Học Sinh") */
+html.lsts-dark-enabled header,
+html.lsts-dark-enabled nav,
+html.lsts-dark-enabled [data-lsts-role="navbar"] {
+  background: var(--lsts-bg-nav) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--lsts-border) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* 4. Hero Greeting Card ("Good evening, Trần Đức Thiện!") */
+html.lsts-dark-enabled [data-lsts-role="hero-card"] {
+  background: var(--lsts-bg-hero) !important;
+  border: 1px solid var(--lsts-border) !important;
+  box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.55) !important;
+}
+
+/* Remove decorative white/cream/blue glows & pseudo-elements inside the Hero Card or Background */
+html.lsts-dark-enabled [data-lsts-role="decorative-glow"],
+html.lsts-dark-enabled [data-lsts-role="hero-card"]::before,
+html.lsts-dark-enabled [data-lsts-role="hero-card"]::after {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* 5. Utility App Cards (Outlook, Canvas, CRM, Teams, Canva) */
+html.lsts-dark-enabled [data-lsts-role="app-card"] {
+  background: var(--lsts-bg-card) !important;
+  background-image: none !important;
+  border: 1px solid var(--lsts-border) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+html.lsts-dark-enabled [data-lsts-role="app-card"]:hover {
+  background: var(--lsts-bg-card-hover) !important;
+  border-color: var(--lsts-border-hover) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.18) !important;
+}
+
+/* 6. Other Light Panels / Dropdowns / Modals */
+html.lsts-dark-enabled [data-lsts-role="surface"] {
+  background-color: var(--lsts-bg-card) !important;
+  background-image: none !important;
+  border-color: var(--lsts-border) !important;
+}
+
+/* 7. Language Switcher Pill (VI / EN) */
+html.lsts-dark-enabled [data-lsts-role="lang-toggle"] {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+}
+
+/* 8. Logout Button ("Thoát") */
+html.lsts-dark-enabled [data-lsts-role="logout-btn"] {
+  background-color: rgba(239, 68, 68, 0.16) !important;
+  border: 1px solid rgba(239, 68, 68, 0.35) !important;
+  color: #f87171 !important;
+}
+
+html.lsts-dark-enabled [data-lsts-role="logout-btn"]:hover {
+  background-color: rgba(239, 68, 68, 0.28) !important;
+}
+
+/* 9. Typography */
+html.lsts-dark-enabled h1,
+html.lsts-dark-enabled h2,
+html.lsts-dark-enabled h3,
+html.lsts-dark-enabled h4,
+html.lsts-dark-enabled [data-lsts-text="heading"] {
+  color: var(--lsts-text-primary) !important;
+}
+
+html.lsts-dark-enabled p,
+html.lsts-dark-enabled [data-lsts-text="muted"] {
+  color: var(--lsts-text-secondary) !important;
+}
+
+/* 10. STRICT MASCOT & ICON PROTECTION (Zero Ghosting) */
+html.lsts-dark-enabled img,
+html.lsts-dark-enabled svg,
+html.lsts-dark-enabled picture,
+html.lsts-dark-enabled canvas,
+html.lsts-dark-enabled [data-lsts-preserve="true"] {
+  filter: none !important;
+  -webkit-filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+html.lsts-dark-enabled [data-lsts-role="mascot-wrapper"] {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
