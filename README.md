@@ -11,8 +11,6 @@ simple dark mode for lsts portal
 
 ### 2. How to Use
 - **Automatic:** Simply navigate to `portal.lsts.edu.vn`. The dark mode engine applies instantly before the page fully loads, preventing any blinding white flashes.
-- **Manual Toggle:** Press **`Alt + D`** at any time while on the LSTS portal to quickly switch between your custom dark theme and the original light theme.
-
 ### 3. Updating the Extension
 If you receive a new `.zip` file with updates in the future:
 1. Delete the old extracted folder and extract the new `.zip` in its place.
