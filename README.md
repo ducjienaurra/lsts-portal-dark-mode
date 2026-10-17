@@ -1,4 +1,4 @@
-# lstsportaldarkmode
+# lsts portal dark mode
 simple dark mode for lsts portal
 ## Installation/ How to use
 ### 1. Install the Extension
