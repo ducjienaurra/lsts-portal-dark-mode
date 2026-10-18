@@ -8,7 +8,7 @@ The easiest way to install the extension on Microsoft Edge is directly from the 
 
 ### Option 2: Manual Installation (Developer Mode)
 If you are installing from a `.zip` file for Chrome, Brave, or Edge:
-[**Get LSTS Portal Dark mode .zip file**](lsts.portal.dark.mode.zip)
+[**Get LSTS Portal Dark mode .zip file**](https://github.com/ducjienaurra/lsts-portal-dark-mode/releases/tag/darkmode)
 #### 1. Install the Extension
 1. **Extract the archive:** Right-click the downloaded `.zip` file and select **Extract All...** (Windows) or double-click it (Mac) to unzip it into a standard folder. 
 2. **Open your Extensions page:**
