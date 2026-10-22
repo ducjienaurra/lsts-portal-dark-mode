@@ -1,14 +1,21 @@
 # LSTS Portal Dark Mode
 
-Simple dark mode for the LSTS portal.
+A simple, fast, and lightweight browser extension to enable dark mode for the LSTS Portal (`portal.lsts.edu.vn`).
+
+[![Get it from Microsoft Edge Add-ons](https://img.shields.io/badge/Get_it_from-Microsoft_Edge_Add--ons-blue?logo=microsoftedge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/lsts-portal-dark-mode/mjghibffdfkmfomhofoadhjecpdjikeo)
+[![Download .zip Release](https://img.shields.io/badge/Download-.zip_Release-success?logo=github)](https://github.com/ducjienaurra/lsts-portal-dark-mode/releases/tag/darkmode)
+
 ## Installation / How to Use
+
 ### Option 1: Install via Microsoft Edge Add-ons (Recommended)
-The easiest way to install the extension on Microsoft Edge is directly from the Add-ons store:
+The easiest way to install the extension on Microsoft Edge is directly from the official Add-ons store:
 [**Get LSTS Portal Dark Mode for Edge**](https://microsoftedge.microsoft.com/addons/detail/lsts-portal-dark-mode/mjghibffdfkmfomhofoadhjecpdjikeo)
 
 ### Option 2: Manual Installation (Developer Mode)
-If you are installing from a `.zip` file for Chrome, Brave, or Edge:
-[**Get LSTS Portal Dark mode .zip file**](https://github.com/ducjienaurra/lsts-portal-dark-mode/releases/tag/darkmode)
+If you are using Chrome, Brave, or prefer sideloading on Edge, you can install the extension manually.
+
+[**Get the LSTS Portal Dark Mode .zip file**](https://github.com/ducjienaurra/lsts-portal-dark-mode/releases/tag/darkmode)
+
 #### 1. Install the Extension
 1. **Extract the archive:** Right-click the downloaded `.zip` file and select **Extract All...** (Windows) or double-click it (Mac) to unzip it into a standard folder. 
 2. **Open your Extensions page:**
@@ -21,7 +28,7 @@ If you are installing from a `.zip` file for Chrome, Brave, or Edge:
 - **Automatic:** Simply navigate to `portal.lsts.edu.vn`. The dark mode engine applies instantly before the page fully loads, preventing any blinding white flashes.
 
 #### 3. Updating the Extension
-If you receive a new `.zip` file with updates in the future:
+If you download a new `.zip` file with updates in the future:
 1. Delete the old extracted folder and extract the new `.zip` in its place.
 2. Go back to your browser's extensions page.
 3. Click the **Reload icon** (`⟳`) on the LSTS Portal Dark Mode card.
